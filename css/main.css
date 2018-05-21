@@ -1,0 +1,239 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#container{
+  height: 635px;
+  width: 779px;
+  margin: auto;
+  border: 10px solid #ccc;
+  box-shadow: 10px 0px 50px grey;
+}
+
+#content{
+  height: 640px;
+  width: 780px;
+
+}
+.row1{
+  width: auto;
+  height: 39.5%;
+  display: flex;
+}
+
+#row2{
+  width: 100%;
+  height: 20.1%;
+  display: flex;
+}
+
+.row2-inner{
+  display: flex;
+  list-style: none;
+}
+
+.row2-inner li{
+  width: 16.6%;
+  height: 41px;
+  border: 1px solid #666666;
+}
+
+
+.row1-inner{
+  float: left;
+  list-style: none;
+}
+
+.row1-inner li{
+  width: 49.5px;
+  height: 40.3px;
+  border: 1px solid #666666;
+}
+
+
+.row-side{
+  width: 40%;
+  height: 100%;
+  border: 1px solid #666666;
+}
+
+#row-middle img{
+  width: 100%;
+  height: 100%;
+}
+
+.inner-side{
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  margin-top: 25px;
+  border: 1px solid #fff;
+  background: #fff
+}
+
+.upleft{
+  background: #84c21f;
+  border: 1px solid #84c21f;
+}
+
+.upright{
+  background: #f6c700;
+  border: 1px solid #f6c700;
+}
+
+.downleft{
+  background: #0092dc;
+  border: 1px solid #0092dc;
+}
+
+.downright{
+  background: #dc2418;
+  border: 1px solid #dc2418;
+}
+.inner-row{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 15px;
+  padding-right: 5px;
+}
+
+.inner{
+  width: 40%;
+  height: 40%;
+  display: inline-block;
+  margin-left: 12px;
+  margin-top: 9px;
+}
+
+.col-side{
+  width: 40%;
+  height: 100%;
+  border: 1px solid #666666;
+}
+
+#row-middle{
+  width: 20%;
+  height: 100%;
+  border: 1px solid #666666;
+}
+
+.row2-inner .color{
+  background: #0092dc;
+}
+
+#row1-inner-down .color{
+  background: #dc2418;
+}
+
+.yellow{
+  background: #f6c700;
+}
+
+.green{
+  background: #84c21f;
+}
+
+.col-middle{
+  width: 20%;
+  height: 100%;
+  border: 1px solid #666666;
+}
+
+#row-middle{
+  display: flex;
+}
+
+#triangle-right {
+  width: 0;
+	height: 0;
+	border-top: 65px solid transparent;
+	border-right: 77px solid #0092dc;
+	border-bottom: 65px solid transparent;
+  position: absolute;
+  margin-left: 78px;
+}
+
+#triangle-left{
+  width: 0;
+	height: 0;
+	border-top: 65px solid transparent;
+	border-left: 77px solid #84c21f;
+	border-bottom: 65px solid transparent;
+}
+
+
+#triangle-up {
+  width: 0;
+	height: 0;
+	border-left: 78px solid transparent;
+	border-right: 78px solid transparent;
+	border-top: 65px solid #f6c700;
+  position: absolute;
+}
+
+#triangle-down {
+  width: 0;
+	height: 0;
+	border-left: 78px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 62px solid #dc2418;
+  position: absolute;
+  margin-top: 65px;
+}
+
+/*Hover effects*/
+
+
+
+.row-side ul li:hover{
+  -webkit-animation-name: sos; /* Safari*/
+  -webkit-animation-duration: 2s; /* Safari*/
+  animation-name: sos;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+/* Safari*/
+@-webkit-keyframes sos {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/* Standard syntax */
+@keyframes sos {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+
+.col-middle ul li:hover{
+  -webkit-animation-name: sos; /* Safari*/
+  -webkit-animation-duration: 2s; /* Safari*/
+  animation-name: sos;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+/* Safari*/
+@-webkit-keyframes sos {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+/* Standard syntax */
+@keyframes sos {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+#row-middle img:hover{
+  opacity: 0.5
+}
